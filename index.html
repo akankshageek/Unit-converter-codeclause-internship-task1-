@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <title>unit converter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="box" class="box">
+        <a href="#length">length</a>
+        <a href="#temperature">temperature</a>
+        <a href="#weight">weight</a>
+        <div id="length" class="length">
+            <div id="main" class="main">
+                <div class="now">
+                <select name="" id="get" class="d">
+                    <option value="meter">meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>
+                </select>
+
+                <select name="" id="set" class="i">
+                    <option value="meter">meter</option>
+                    <option value="cm">cm</option>
+                    <option value="foot">foot</option>
+                </select>
+                <p id="demo" contenteditable="true" class="n1" onkeyup="getlen()">1</p>
+                <p id="inc" contenteditable="true" class="n2">12</p>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div id="temperature" class="temperature">
+                <div id="main" class="main">
+                    <span class="doit">Celsius</span>
+                    <span class="">Fahreheit</span>
+                    <div class="">
+                    <p id="celi" contenteditable="true" class="" onkeyup="getceli()">1</p>
+                    <p id="fah" contenteditable="true" class="" onkeyup="getf()">12</p>
+                   </div>
+                </div>
+
+            </div>
+
+            <div id="weight">
+                <div class="main">
+                    <div class="">
+                    <span class="doit">killo gram </span>
+                    <span class="inc">gram</span>
+                    <p id="kilo" contenteditable="true" class="" onkeyup="getgram()">1</p>
+                    <p id="gram" contenteditable="true" class="" onkeyup="getkilo()">12</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
